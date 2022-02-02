@@ -15,19 +15,9 @@ public class MatrizEspiral {
         int matriz[][] = solicitarTamaño();
     }
 
-    /**
-     * Crea una matriz con los parametros dados
-     * @param x
-     * @param y
-     * @return
-     */
-    public static int[][] crearMatriz(int x, int y) {
-        int matriz[][] = new int[x][y];
-        return matriz;
-    }
 
     /**
-     * Solicita por consola las medida de la matriz y la crea usando el metodo crearMatriz
+     * Solicita por consola las medida de la matriz y la crea usando esos mismos parametros
      * @return
      */
     public static int[][] solicitarTamaño() {
@@ -44,7 +34,7 @@ public class MatrizEspiral {
             y = teclado.nextInt();
         } while (y > 50 && y < 1);
 
-        int matriz[][] =crearMatriz(x, y);
+        int matriz[][] = new int[x][y];
 
         System.out.println("Se creo exitosamente una matriz de "+x+" por "+y+".");
 
