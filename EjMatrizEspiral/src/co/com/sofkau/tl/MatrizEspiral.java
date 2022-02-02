@@ -13,20 +13,43 @@ public class MatrizEspiral {
     // TODO: 2/02/2022 método para integrar todas las funcionalidades anteriores por medio de un menú que se comunique con el usuario
 
     public static void main(String[] args) {
-
+        int matriz[][] = solicitarTamaño();
     }
 
-    public int[][] crearMatriz(int x, int y){
+    /**
+     * Crea una matriz con los parametros dados
+     * @param x
+     * @param y
+     * @return
+     */
+    public static int[][] crearMatriz(int x, int y) {
         int matriz[][] = new int[x][y];
         return matriz;
     }
-    public int[][] solicitarTamaño(int x, int y){
+
+    /**
+     * Solicita por consola las medida de la matriz y la crea usando el metodo crearMatriz
+     * @return
+     */
+    public static int[][] solicitarTamaño() {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Ingrese valor x");
-        x = teclado.nextInt();
-        System.out.println("Ingrese valor y");
-        y = teclado.nextInt();
-        return crearMatriz(x, y);
+        int x = 0;
+        do {
+            System.out.println("Ingrese valor x, maximo 50");
+            x = teclado.nextInt();
+        } while (x > 50 && x > 1);
+
+        int y = 0;
+        do {
+            System.out.println("Ingrese valor y, maximo 50");
+            y = teclado.nextInt();
+        } while (y > 50 && x > 1);
+
+        int matriz[][] =crearMatriz(x, y);
+
+        System.out.println("Se creo exitosamente una matriz de "+x+" por "+y+".");
+
+        return matriz;
     }
 
 }
