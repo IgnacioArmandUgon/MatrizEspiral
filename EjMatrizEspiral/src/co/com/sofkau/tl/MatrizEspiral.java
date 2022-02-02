@@ -1,6 +1,4 @@
 package EjMatrizEspiral.src.co.com.sofkau.tl;
-
-
 import java.util.Scanner;
 
 public class MatrizEspiral {
@@ -10,7 +8,7 @@ public class MatrizEspiral {
     // TODO: 2/02/2022 método para recorrer columna asc
     // TODO: 2/02/2022 método para solicitar tamaño de matriz a llenar <-- Nuestra tarea
     // TODO: 2/02/2022 método para imprimir la matriz
-    // TODO: 2/02/2022 método para integrar todas las funcionalidades anteriores por medio de un menú que se comunique con el usuario
+    // TODO: 2/02/2022 método para integrar todas las funciona  lidades anteriores por medio de un menú que se comunique con el usuario
 
     public static void main(String[] args) {
         int matriz[][] = solicitarTamaño();
