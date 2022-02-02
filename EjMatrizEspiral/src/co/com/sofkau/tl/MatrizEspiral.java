@@ -36,13 +36,13 @@ public class MatrizEspiral {
         do {
             System.out.println("Ingrese valor x, maximo 50");
             x = teclado.nextInt();
-        } while (x > 50 && x > 1);
+        } while (x > 50 && x < 1);
 
         int y = 0;
         do {
             System.out.println("Ingrese valor y, maximo 50");
             y = teclado.nextInt();
-        } while (y > 50 && x > 1);
+        } while (y > 50 && y < 1);
 
         int matriz[][] =crearMatriz(x, y);
 
